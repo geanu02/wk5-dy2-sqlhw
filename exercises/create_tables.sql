@@ -33,3 +33,11 @@ CREATE TABLE order_products(
 	FOREIGN KEY(product_id) REFERENCES products(product_id)
 );
 
+CREATE TABLE inventory(
+	inventory_id SERIAL PRIMARY KEY,
+	stock_quantity int,
+	expiration_date date,
+	product_id int,
+	FOREIGN KEY(product_id) REFERENCES products(product_id)
+);
+

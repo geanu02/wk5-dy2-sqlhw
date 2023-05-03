@@ -3,3 +3,6 @@ ALTER TABLE IF EXISTS customer
 	
 ALTER TABLE IF EXISTS customer
 	ADD email TYPE VARCHAR(100);
+	
+ALTER TABLE IF EXISTS showtime
+	ALTER show_time TYPE TIME;

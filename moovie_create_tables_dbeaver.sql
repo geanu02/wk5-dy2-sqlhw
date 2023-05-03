@@ -72,7 +72,7 @@ CREATE TABLE "concession"(
     "con_id" SERIAL PRIMARY KEY,
     "con_name" VARCHAR(75),
     "con_price" DECIMAL(8, 2),
-    "refill" BOOLEAN,
+    "refill" BOOLEAN
 );
 
 CREATE TABLE "cart"(
